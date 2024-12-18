@@ -4,8 +4,9 @@ cppfiles=nsm.cpp ConsoleColor.cpp DateTimeInfo.cpp Directory.cpp Expr.cpp Exprtk
 
 DESTDIR?=
 PREFIX?=/usr/local
+LIB?=/lib
 BINDIR=${DESTDIR}${PREFIX}/bin
-LIBDIR=${DESTDIR}${PREFIX}/lib
+LIBDIR=${DESTDIR}${PREFIX}${LIB}
 
 CXX?=g++
 CXXFLAGS+=-std=c++11 -Wall -Wextra -pedantic -O3 -Dexprtk_disable_caseinsensitivity
